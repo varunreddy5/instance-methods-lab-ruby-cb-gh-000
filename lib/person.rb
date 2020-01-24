@@ -1,8 +1,13 @@
 class Person
-  def talk
-    puts 'Hello World!'
+  def name = (person_name)
+    @person_name = person_name
   end
-  def walk
-    puts 'The Person is walking'
+
+  def foo
+    puts @person_name
   end
 end
+
+v = Person.new
+v.name = 'Tom'
+v.foo
